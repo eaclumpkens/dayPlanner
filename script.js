@@ -41,17 +41,15 @@ for (i = 0; i < times.length; i++) {
     
     }
 
-    
+    // GET TASKS
     var taskData = JSON.parse(localStorage.getItem("taskData"));
 
     if (taskData) {
         if (taskData[`${i}`]) {
             $(`#input-${i}`).val(taskData[`${i}`]);
+            $(`#input-${i}`).attr("value", taskData[`${i}`]);
         } 
     } 
-
-    
-    
 }
 
 $(document).ready(function(){
