@@ -7,13 +7,13 @@
     
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <main class= "container-fluid">
+    <main class= "container">
 
         <!-- PAGE HEADER -->
         <header>
@@ -25,23 +25,28 @@
 
             <!-- HEADER -->
             <div class="row">
-                <h1 id="header" class= "col-md-12"> Day Planner</h1>
+                <h1 id="header" class= "col-md-12">Day Planner</h1>
             </div>
+            <hr>
 
             <!-- TODAY'S DATE -->
             <div class="row">
                 <h2 id="date" class="col-md-12"></h2>
             </div>                 
-
+            
+            <!-- CURRENT TIME -->
+            <div class="row">
+                <h2 id="current-time" class="col-md-12"></h2>
+            </div> 
+            
         </header>
 
         <!-- SUBHEADINGS -->
         <div id="subhead" class="row">
-            <h3 class="col-md-4">Time</h3>
-            <h3 class="col-md-4">Task</h3>
-            <h3 class="col-md-4">Save</h3>
+            <h3 class="col-md-3">Time</h3>
+            <h3 class="col-md-6">Tasks</h3>
+            <h3 class="col-md-3">Save</h3>
         </div>
-        <hr>
 
         <!-- TIMESLOTS CONTAINER -->
         <div id="time-slots">

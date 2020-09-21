@@ -2,49 +2,89 @@
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 25px;
-    color: #687864;
-    background: #D7CEC7;
+    color: #737779;
 }
 
-header h1, header h2, header div{
-    font-family: 'Montserrat', sans-serif;
-    background: #76323F;
-    color: #D7CEC7;
+/* HEADER STYLIZATION */
+
+header h1, h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 header h1 {
+    font-weight: 400;
     font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.5rem;
+    color: #257099;
 }
 
 header h2 {
-    padding-bottom: 1%;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 header i {
-    background: #76323F;
-    color: #D7CEC7;
-    padding-top: 2%;
+    color: #737779;
+    padding-top: 1.11%;
     padding-bottom: 1%;
 }
 
+#current-time {
+    padding-bottom: 0.8%;
+}
+
+/* TIME-SLOTS HEADER STYLIZATIONS */
+
 h3 {
-    margin-top: 2%;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    color: #76323F;
+    color: #257099;
+}
+
+/* TIME SLOT STYLIZATION */
+
+h4, #save-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+input {
+    border: none;
+    margin-bottom: 0.2rem;
+    font-size: 60%;
+    text-align: left;
+    height: 4rem;
+    overflow: scroll;
+    opacity: 0.9;
+}
+
+input:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#save-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* FOOTER STYLIZATION */
+
+footer {
+    margin-top: 10%;
+    opacity: 0.9;
 }
 
 footer nav {
     padding: 1%;
-    background: #d3c5ba;
+    background: #257099;
 } 
 
 footer i {
-    background: #d3c5ba;
-    color: #76323F;
+    background: #257099;
+    color: #eee;
 }
 
