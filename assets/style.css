@@ -43,7 +43,7 @@ h3 {
 
 /* TIME SLOT STYLIZATION */
 
-h4, #save-button {
+h4, .save-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ input:hover {
     cursor: pointer;
 }
 
-#save-button:hover {
+.save-button:hover {
     opacity: 0.5;
     cursor: pointer;
 }
