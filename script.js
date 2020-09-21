@@ -26,14 +26,14 @@ for (i = 0; i < times.length; i++) {
     `)
 
     if (currentHour === hourAbr) {
-        $(`#hour-${i}`).attr("style", "font-weight:400")
-        $(`#input-${i}`).attr("style", "background:#CCCCFF");
+        $(`#hour-${i}`).attr("style", "font-weight:600")
+        $(`#input-${i}`).attr("style", "background:#509048");
     } else if (currentHour < hourAbr) {
         // FUTURE HOURS
-        $(`#input-${i}`).attr("style", "background:#B5CCFF");
+        $(`#input-${i}`).attr("style", "background:#90c058");
     } else {
         // PAST HOURS
-        $(`#input-${i}`).attr("style", "background:#87ccff");
+        $(`#input-${i}`).attr("style", "background:#307820");
         $(`#input-${i}`).attr("disabled", "true");
     }
 

@@ -2,7 +2,7 @@
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 25px;
-    color: #737779;
+    color: #4b4e50;
 }
 
 /* HEADER STYLIZATION */
@@ -12,10 +12,9 @@ header h1, h3 {
 }
 
 header h1 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 4rem;
-    letter-spacing: 0.5rem;
-    color: #257099;
+    color: #307820;
 }
 
 header h2 {
@@ -24,7 +23,7 @@ header h2 {
 }
 
 header i {
-    color: #737779;
+    color: #4b4e50;
     padding-top: 1.11%;
     padding-bottom: 1%;
 }
@@ -39,7 +38,7 @@ h3 {
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    color: #257099;
+    color: #509048;
 }
 
 /* TIME SLOT STYLIZATION */
@@ -59,6 +58,7 @@ input {
     height: 4rem;
     overflow: scroll;
     opacity: 0.9;
+    color: #eee;
 }
 
 input:hover {
@@ -80,11 +80,11 @@ footer {
 
 footer nav {
     padding: 1%;
-    background: #257099;
+    background: #307820;
 } 
 
 footer i {
-    background: #257099;
+    background: #307820;
     color: #eee;
 }
 
