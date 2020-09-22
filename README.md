@@ -1,7 +1,7 @@
 # dayPlanner
-
-#####[launch site](http://https://eaclumpkens.github.io/dayPlanner/)
 ----
+
+[launch site](http://https://eaclumpkens.github.io/dayPlanner/)
 
 ![landing-page](./assets/images/01-screenshot.png)
 ![user-input](./assets/images/02-screenshot.png)
