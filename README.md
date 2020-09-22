@@ -1,6 +1,6 @@
 # dayPlanner
 
-## week 05 homework
+#####[launch site](http://https://eaclumpkens.github.io/dayPlanner/)
 ----
 
 ![landing-page](./assets/images/01-screenshot.png)
