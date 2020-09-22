@@ -8,8 +8,6 @@ function currentTime() {
 
 window.setInterval(currentTime, 1000);
 
-// GET DATA
-
 // TIME VARIABLES
 
 var currentHour = moment().format('HH');
@@ -42,41 +40,31 @@ for (i = 0; i < times.length; i++) {
     }
 
     // GET TASKS
-    var taskData = JSON.parse(localStorage.getItem("taskData"));
-
-    if (taskData) {
-        if (taskData[`${i}`]) {
-            $(`#input-${i}`).val(taskData[`${i}`]);
-            $(`#input-${i}`).attr("value", taskData[`${i}`]);
-        } 
+    if (localStorage[`${i}`] != undefined) {
+            $(`#input-${i}`).val(localStorage[`${i}`]);
+            $(`#input-${i}`).attr("value", localStorage[`${i}`]);
     } 
+
 }
 
 $(document).ready(function(){
 
     function setTasks() {
+
+        for (i=0; i < times.length; i++) {
+            if ($(`#input-${i}`).attr("value")) {
+                localStorage[i] = $(`#input-${i}`).attr("value");
+            } else {
+                localStorage[i] = "";
+            }
+            
+        }
         
-        localStorage.setItem(
-            "taskData",
-            JSON.stringify({
-                0: $("#input-0").attr("value"),
-                1: $("#input-1").attr("value"),
-                2: $("#input-2").attr("value"),
-                3: $("#input-3").attr("value"),
-                4: $("#input-4").attr("value"),
-                5: $("#input-5").attr("value"),
-                6: $("#input-6").attr("value"),
-                7: $("#input-7").attr("value"),
-                8: $("#input-8").attr("value"),
-                9: $("#input-9").attr("value"),
-                10: $("#input-10").attr("value"),
-                11: $("#input-11").attr("value"),
-                12: $("#input-12").attr("value")
-            })
-        )
+        
     }
 
     $("input").on("keyup", function(){
+
         $(this).attr("value", `${$(this).val()}`)
     })
 
