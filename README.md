@@ -19,4 +19,4 @@ I used JQuery to access the HTML ids and classes to change the input background 
 
 ##### Troubleshooting
 
-This was a lot of breakign down logic for me, so I had to draw/write out most of the process which helps me a lot with maintaining order andimagining the final product. The keys aren't stored chronologically but the data is still pushed and pulled from/to the right spots. I want to perfect this more and make the style more appealing but I am happy with the current functionality.
+This was a lot of breakign down logic for me, so I had to draw/write out most of the process which helps me a lot with maintaining order andimagining the final product. I want to perfect this more and make the style more appealing but I am happy with the current functionality.

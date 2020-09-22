@@ -20,8 +20,8 @@ for (i = 0; i < times.length; i++) {
     $("#time-slots").append(`
         <div class="row">
             <h4 id="hour-${i}" class="time col-md-3">${hour}</h4>
-            <input id="input-${i}" data-hour="${hour}" type="text" class="planner-input col-md-6">
-            <i id="save-${i}" class="save-button col-md-3 far fa-save"></i>
+            <input id="input-${i}" data-index="${i}" type="text" class="planner-input col-md-6">
+            <i id="save-${i}" data-index="${i}" class="save-button col-md-3 far fa-save"></i>
         </div>
     `)
 
@@ -36,38 +36,32 @@ for (i = 0; i < times.length; i++) {
         $(`#input-${i}`).attr("style", "background:#307820");
         $(`#input-${i}`).attr("disabled", "true");
         $(`#save-${i}`).attr("disabled", "true");
-    
     }
 
     // GET TASKS
-    if (localStorage[`${i}`] != undefined) {
+    if (localStorage[`${i}`]) {
             $(`#input-${i}`).val(localStorage[`${i}`]);
             $(`#input-${i}`).attr("value", localStorage[`${i}`]);
     } 
-
 }
 
 $(document).ready(function(){
 
-    function setTasks() {
-
-        for (i=0; i < times.length; i++) {
-            if ($(`#input-${i}`).attr("value")) {
-                localStorage[i] = $(`#input-${i}`).attr("value");
-            } else {
-                localStorage[i] = "";
-            }
-            
-        }
-        
-        
-    }
-
     $("input").on("keyup", function(){
+        var index = $(this).attr("data-index");
+        if (!$(this).val()) {
+            $(`#save-${index}`).attr("value", "");
+        };
 
-        $(this).attr("value", `${$(this).val()}`)
-    })
+        $(`#save-${index}`).attr("value", `${$(this).val()}`);
+    });
 
-    $(".save-button").on("click", setTasks);
+    //  SET TASKS
+    $(".save-button").on("click", function(){
+
+        if ($(this).attr("value")) {
+            localStorage[$(this).attr("data-index")] = $(this).attr("value");
+        }; 
+    });
 
 }) 
