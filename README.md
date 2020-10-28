@@ -1,22 +1,75 @@
-# dayPlanner
+
+# Day Planner
+[![License](https://img.shields.io/badge/license-Other-orange)](https://opensource.org/licenses)
+
+```
+AS AN employee with a busy schedule
+I WANT to add important events to a daily planner
+SO THAT I can manage my time effectively
+```
+
+## Table of Contents
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[Contribution](#contribution)
+
+[Tests](#tests)
+
+[Images](#images)
+
+[Questions](#questions)
+
 ----
 
-[launch site](https://eaclumpkens.github.io/dayPlanner/)
+<a name="installation"></a>
+### Installation
 
-![landing-page](./assets/images/01-screenshot.png)
-![user-input](./assets/images/02-screenshot.png)
-![local-storage](./assets/images/03-screenshot.png)
+`git clone` repository
 
-### Project 
+<a name="usage"></a>
+### Usage
 
-For this project I created a same-day planner that allows you to locally store inputted hourly tasks. Users can save their data via save buttons, current date and times are dynamically displayed as well as color coded depending on weather or note the hour has passed.
+```
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with timeblocks for standard business hours
+WHEN I view the timeblocks for that day
+THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+WHEN I click into a timeblock
+THEN I can enter an event
+WHEN I click the save button for that timeblock
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
+```
 
-##### Process Summary
+<a name="contribution"></a>
+### Contribution
 
-After building out the basic HTML and CSS I needed to link JavaScript/JQuery to, incorporating Bootstrap and Fontawesome for grid style and icons, I linked the Moments.JS library. With API library and interval creation I can display the current time updated by the second, date, and dynamically append a row for each hour to the body. 
+Single contribution project 
 
-I used JQuery to access the HTML ids and classes to change the input background based on the current time, disable input for past hours, and save tasks with an JQuery event listener.
+<a name="tests"></a>
+### Tests
 
-##### Troubleshooting
+Currently no testing
 
-This was a lot of breakign down logic for me, so I had to draw/write out most of the process which helps me a lot with maintaining order andimagining the final product. I want to perfect this more and make the style more appealing but I am happy with the current functionality.
+<a name="images"></a>
+### Images
+##### App Demo
+![app-demo](./assets/images/app-demo.gif)
+
+----
+
+<a name="questions"></a>
+### Questions
+##### Contact Me
+
+Feel free to contact me via GitHub or email with any feedback - thanks for checking out my code!
+
+[GitHub u/eaclumpkens](https://github.com/eaclumpkens)
+eaclumpkens@gmail.com
